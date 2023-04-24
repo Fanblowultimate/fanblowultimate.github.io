@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fan blow ultimate</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+        h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 50px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  form {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"] {
+    font-size: 24px;
+    padding: 10px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #cc5200;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+  }
+</style>
+  </head>
+  <body>
+    <h1>Fan blow ultimate</h1>
+    <p>To remove your data from our system, please enter your email address below:</p>
+    <form action="remove_data.php" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <input type="submit" value="Remove my data">
+    </form>
+    <footer>
+      <p>We will remove all personal data associated with this email address, including:</p>
+      <ul>
+        <li>name</li>
+        <li>address</li>
+        <li>phone number</li>
+        <li>purchase history</li>
+      </ul>
+      <p>We will retain non-personal data, such as website usage statistics, for analytical purposes.</p>
+    </footer>
+  </body>
+</html>
